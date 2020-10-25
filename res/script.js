@@ -6,6 +6,8 @@ function loadInfo() {
 }
 
 
+
+
 function loadPosts() {
     data =0;
     data = $.get('https://private-anon-4d68465a6f-wad20postit.apiary-mock.com/posts')
@@ -50,3 +52,9 @@ function updatePosts(postdata) {
 function loadProfile() {
     return $.get('https://private-anon-4d68465a6f-wad20postit.apiary-mock.com/profiles')
 }
+
+$(document).ready(function(){
+    $('img.avatar').on('click', ()=>{
+    $('#dropdown-menu').toggle();
+});
+})
