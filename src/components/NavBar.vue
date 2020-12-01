@@ -1,9 +1,12 @@
 <template>
   <nav>
-    <div class="menu-item"><img src="src/assets/logo.png" /></div>
-    <div class="menu-item"><a href="#">About</a></div>
-    <Dropdown title="Services" :items="services" />
-
+      <div class="logo-container">
+        <img src="../assets/logo.png" alt="postIt">
+      </div>
+      <div class="search-container">
+        <input type="text" name="search"><button type="button">Search</button>
+      </div>
+    <Dropdown></Dropdown>
   </nav>
 </template>
 
@@ -35,7 +38,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 nav {
   display: flex;
   align-items: center;
